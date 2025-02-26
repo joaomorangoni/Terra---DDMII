@@ -1,0 +1,286 @@
+.app-t360-live {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-background-color);
+    border: 0;
+    border-radius: 0;
+    position: relative
+}
+
+.app-t360-live__icon {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px
+}
+
+.app-t360-live__row {
+    flex: 0 0 auto
+}
+
+.app-t360-live__row_remainder {
+    flex: 1 1 auto
+}
+
+.app-t360-live__middle-wrapper {
+    display: flex;
+    flex-direction: column
+}
+
+.card-hxl .app-t360-live__middle-wrapper {
+    border-top-width: 4px;
+    border-top-style: solid
+}
+
+.card-hxl .app-t360-live__middle-wrapper {
+    flex-direction: row
+}
+
+.app-t360-live__end_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end
+}
+
+.card-hxl .app-t360-live__end_wrapper {
+    justify-content: flex-start
+}
+
+.card-hxl .app-t360-live__border {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0
+}
+
+.app-t360-live__player {
+    position: relative;
+    width: 100%;
+    height: 172px;
+    overflow: hidden;
+    border-radius: 8px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000
+}
+
+.card-hxl .app-t360-live__player {
+    width: 441px;
+    height: 248px;
+    border-radius: 0 0 8px 8px;
+    border: none
+}
+
+.card-hxl3 .app-t360-live__player {
+    width: 540px;
+    height: 304px;
+    flex-shrink: 0
+}
+
+.app-t360-live__player__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.app-t360-live__player--thumb {
+    width: 100%;
+    height: inherit;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: top
+}
+
+.card-hxl .app-t360-live__player--thumb {
+    width: 441px;
+    height: 248px
+}
+
+.card-hxl3 .app-t360-live__player--thumb {
+    width: 540px;
+    height: 304px
+}
+
+.app-t360-live__text {
+    width: 100%
+}
+
+.card-hxl .app-t360-live__text {
+    width: 179px;
+    margin-left: 8px
+}
+
+.card-hxl3 .app-t360-live__text {
+    width: 410px;
+    margin-left: 16px
+}
+
+.app-t360-live__subtype {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 80px;
+    padding: 10px 8px 4px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px
+}
+
+.card-hxl .app-t360-live__subtype {
+    margin-top: 0;
+    padding-top: 4px
+}
+
+.app-t360-live__subtype__live {
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: currentColor;
+    animation: fadeInOut 1.25s ease-in-out infinite
+}
+
+.app-t360-live__hat {
+    margin: 8px 0 4px 0;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.card-hxl .app-t360-live__hat {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.app-t360-live__title {
+    font-family: var(--font-default-serif);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--card-app-default-text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: break-word
+}
+
+.card-hxl .app-t360-live__title {
+    -webkit-line-clamp: 6
+}
+
+[data-range=xlarge] .card-hxl3 .app-t360-live__title {
+    font-size: 40px;
+    line-height: 48px;
+    -webkit-line-clamp: 5
+}
+
+.app-t360-live__stamp {
+    display: none;
+    flex-direction: column
+}
+
+.app-t360-live__stamp.show {
+    display: flex
+}
+
+.app-t360-live__stamp--ad {
+    margin-left: 10px
+}
+
+.app-t360-live__ended {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #606060;
+    background: -moz-radial-gradient(circle, #606060 11%, #262626 64%, #000 100%);
+    background: -webkit-radial-gradient(circle, #606060 11%, #262626 64%, #000 100%);
+    background: radial-gradient(circle, #606060 11%, #262626 64%, #000 100%)
+}
+
+.app-t360-live__ended__subtitle {
+    font-size: 22px;
+    color: #f85700;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.app-t360-live__ended__message {
+    color: #fff;
+    font-size: 14px
+}
+
+@media screen and (min-width:1200px) {
+    [data-range=large] .card-hxl3 .app-t360-live__title {
+        font-size: 40px;
+        line-height: 48px;
+        -webkit-line-clamp: 5
+    }
+}
+
+@media screen and (max-width:1199px) {
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__middle-wrapper {
+        flex-direction: column
+    }
+
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__player {
+        width: 100%;
+        height: 172px
+    }
+
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__text {
+        width: 100%;
+        margin-left: 0
+    }
+
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__subtype {
+        padding: 0;
+        margin-top: 8px;
+        background-color: initial
+    }
+
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__subtype span {
+        display: none
+    }
+
+    html:not([data-range=xlarge]) .flex-hxl-to-h .app-t360-live__hat {
+        display: inline-block
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
